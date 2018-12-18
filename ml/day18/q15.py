@@ -1,0 +1,12 @@
+import tensorflow as tf
+x=tf.constant([[1,2],[3,4]],tf.int32)
+y=tf.constant([[5,6],[7,8]],tf.int32)
+sub=tf.subtract(x,y)
+sess=tf.Session()
+out1=sess.run(x)
+out2=sess.run(y)
+out3=sess.run(sub)
+print(out1)
+print(out2)
+print(out3)
+sess.close()
